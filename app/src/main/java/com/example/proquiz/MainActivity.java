@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                checkAnswer();
+                checkAns();
             }
         });
 
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                 if ((event.getAction() == KeyEvent.ACTION_DOWN) &&
                         (keyCode == KeyEvent.KEYCODE_ENTER)) {
 
-                    checkAnswer();
+                    checkAns();
                     return true;
                 }
                 return false;
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-    public void checkAnswer(){
+    public void checkAns(){
         String answerString  = answerEdt.getText().toString().trim();
 
 
